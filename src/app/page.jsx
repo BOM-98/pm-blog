@@ -1,9 +1,9 @@
 import styles from "./homepage.module.css";
-import Featured from "./components/featured/Featured";
-import Menu from "./components/menu/Menu";
-import CategoryList from "./components/categoryList/CategoryList";
-import CardList from "./components/cardList/CardList";
-import Navbar from "./components/navbar/Navbar";
+import Featured from "../components/featured/Featured";
+import Menu from "../components/menu/Menu";
+import CategoryList from "../components/categoryList/CategoryList";
+import CardList from "../components/cardList/CardList";
+import Navbar from "../components/navbar/Navbar";
 
 export default function Home() {
   return (
