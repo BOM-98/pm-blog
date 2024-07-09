@@ -8,11 +8,18 @@ const categoryList = () => {
     <div className={styles.container}>
       <h2 className={styles.title}>Categories</h2>
       <div className={styles.categories}>
-        <div className={styles.category}>
-          <Link href="/blog?cat=style">
-            <Image src="/style.png" alt="" width={32} height={32} className={styles.Image} />
-          </Link>
-        </div>
+        <Link href="/blog?cat=style" className={`${styles.category} ${styles.fashion}`}>
+          <Image src="/style.png" alt="" width={32} height={32} className={styles.Image} />
+        </Link>
+        <Link href="/blog?cat=style" className={`${styles.category} ${styles.fashion}`}>
+          <Image src="/style.png" alt="" width={32} height={32} className={styles.Image} />
+        </Link>
+        <Link href="/blog?cat=style" className={`${styles.category} ${styles.fashion}`}>
+          <Image src="/style.png" alt="" width={32} height={32} className={styles.Image} />
+        </Link>
+        <Link href="/blog?cat=style" className={`${styles.category} ${styles.fashion}`}>
+          <Image src="/style.png" alt="" width={32} height={32} className={styles.Image} />
+        </Link>
       </div>
     </div>
   );
