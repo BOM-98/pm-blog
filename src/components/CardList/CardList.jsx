@@ -1,14 +1,24 @@
 import React from "react";
-import styles from "./cardList.module.css";
-import Pagination from "../pagination/Pagination";
+import Pagination from "../Pagination/Pagination";
+import Image from "next/image";
+import Card from "../design/Card";
 
-const cardList = () => {
+const CardList = () => {
   return (
-    <div className={styles.container}>
-      CardList
+    <div className="flex flex-col flex-[5] mt-12">
+      <h2 className="title h2 mb-12">Recent Posts</h2>
+      <div className="posts flex">
+        <div className="post">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
       <Pagination />
     </div>
   );
 };
 
-export default cardList;
+export default CardList;

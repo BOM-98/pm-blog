@@ -5,7 +5,7 @@ import Link from "next/link";
 const categoryList = () => {
   return (
     <div className="mx-auto mt-12">
-      <h2 className="text-3xl font-bold mb-12">Categories</h2>
+      <h2 className="h2 mb-12">Categories</h2>
       <div className="flex flex-wrap justify-between gap-5">
         <Link
           href="/blog?cat=style"
@@ -14,7 +14,7 @@ const categoryList = () => {
           <div className="relative w-[32px] h-[32px]">
             <Image src="/style.png" alt="" fill className="rounded-full" />
           </div>
-          <span className="ml-2">Style</span>
+          <span className="ml-2 text-black">Style</span>
         </Link>
         <Link
           href="/blog?cat=style"
@@ -23,7 +23,7 @@ const categoryList = () => {
           <div className="relative w-[32px] h-[32px]">
             <Image src="/style.png" alt="" fill className="rounded-full" />
           </div>
-          <span className="ml-2">Style</span>
+          <span className="ml-2 text-black">Style</span>
         </Link>
         <Link
           href="/blog?cat=style"
@@ -32,7 +32,7 @@ const categoryList = () => {
           <div className="relative w-[32px] h-[32px]">
             <Image src="/style.png" alt="" fill className="rounded-full" />
           </div>
-          <span className="ml-2">Style</span>
+          <span className="ml-2 text-black">Style</span>
         </Link>
         <Link
           href="/blog?cat=style"
@@ -41,7 +41,7 @@ const categoryList = () => {
           <div className="relative w-[32px] h-[32px]">
             <Image src="/style.png" alt="" fill className="rounded-full" />
           </div>
-          <span className="ml-2">Style</span>
+          <span className="ml-2 text-black">Style</span>
         </Link>
         <Link
           href="/blog?cat=style"
@@ -50,7 +50,7 @@ const categoryList = () => {
           <div className="relative w-[32px] h-[32px]">
             <Image src="/style.png" alt="" fill className="rounded-full" />
           </div>
-          <span className="ml-2">Style</span>
+          <span className="ml-2 text-black">Style</span>
         </Link>
       </div>
     </div>
