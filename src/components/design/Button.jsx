@@ -19,7 +19,7 @@ const outlineClasses = {
 
 const textOnlyClasses = {
   primary: "text-orange-500 !px-0 hover:text-orange-600",
-  secondary: "text-gray-500 !px-0",
+  secondary: "text-[var(--softTextColor)] !px-0",
   success: "text-green-500 !px-0 ",
   warning: "text-yellow-400 !px-0",
   danger: "text-red-500 !px-0",
@@ -86,7 +86,10 @@ export default function Button({
 
   const renderButton = () => (
     <button className={classes} onClick={onClick}>
-      {children}
+      <span className="mx-auto transition group">
+        {children}
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange-600"></span>
+      </span>
     </button>
   );
 
