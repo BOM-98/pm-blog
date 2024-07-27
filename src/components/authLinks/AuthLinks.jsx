@@ -1,15 +1,16 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { signOut, useSession } from "next-auth/react";
 
 const AuthLinks = () => {
   //temporary
   const [open, setOpen] = useState(false);
-  const status = "authenticated";
+  const { status } = useSession();
 
   return (
     <>
-      {status === "notauthenticated" ? (
+      {status === "unauthenticated" ? (
         <Link href="/login" className="cursor-pointer">
           Login
         </Link>

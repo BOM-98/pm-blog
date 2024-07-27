@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center">
               <Image src="/youtube.png" className="h-8 me-3" alt="Main Logo" width={32} height={32} />
-              <span className="self-center h5 font-semibold whitespace-nowrap dark:text-white">PM Mastery</span>
+              <span className="self-center h5 font-semibold whitespace-nowrap dark:text-white">Builder Paths</span>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

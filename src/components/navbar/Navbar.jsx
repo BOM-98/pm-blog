@@ -13,7 +13,7 @@ const Navbar = () => {
         <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
         <Image src="/youtube.png" alt="youtube" width={24} height={24} />
       </div>
-      <div className="flex-[2] text-start text-[22px] sm:text-center sm:text-[36px] font-bold">PM Mastery</div>
+      <div className="flex-[2] text-start text-[22px] sm:text-center sm:text-[36px] font-bold">Builder Paths</div>
       <div className="flex-[1] flex gap-[20px] justify-end">
         <ThemeToggle />
         <Link href="/" className="flex-[1] gap-[20px] hidden sm:flex">
