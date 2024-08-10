@@ -27,7 +27,7 @@ const Card = ({ key, post }) => {
           <span className="text-[var(--softTextColor)]">{post.createdAt.substring(0, 10)}</span>
           <Link
             className={`px-4 py-2 hover:bg-${categoryColor}-50 text-center border border-${categoryColor}-500 rounded-full transition`}
-            href={`/cat/${post.catSlug}`}
+            href={`/blog?cat=${post.catSlug}`}
           >
             <span className={`text-${categoryColor}-500`}>{post.catSlug}</span>
           </Link>
