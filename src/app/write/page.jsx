@@ -26,11 +26,12 @@ const WritePage = () => {
   const [media, setMedia] = useState("");
   const [value, setValue] = useState("");
   const [title, setTitle] = useState("");
+  const baseUrl = process.env.BASE_URL;
 
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/categories", {
+        const res = await fetch(`${baseUrl}/api/categories`, {
           cache: "no-store",
         });
 

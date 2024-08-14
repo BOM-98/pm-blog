@@ -20,12 +20,13 @@ const fetcher = async (url) => {
 const Comments = ({ postSlug }) => {
   const { status } = useSession();
 
-  const { data, mutate, isLoading } = useSWR(`http://localhost:3000/api/comments?postSlug=${postSlug}`, fetcher);
+  const { data, mutate, isLoading } = useSWR(`${baseUrl}/api/comments?postSlug=${postSlug}`, fetcher);
 
   const [desc, setDesc] = useState("");
+  const baseUrl = process.env.BASE_URL;
 
   const handleSubmit = async () => {
-    await fetch("http://localhost:3000/api/comments", {
+    await fetch(`${baseUrl}/api/comments`, {
       method: "POST",
       body: JSON.stringify({ desc, postSlug }),
       headers: { "Content-Type": "application/json" },
