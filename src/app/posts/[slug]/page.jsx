@@ -2,10 +2,8 @@ import Comments from "@/components/Comments/Comments";
 import Menu from "@/components/Menu/Menu";
 import Image from "next/image";
 
-const baseUrl = process.env.BASE_URL || "https://www.builderpaths.com/";
-
 const getData = async (slug) => {
-  const res = await fetch(`${baseUrl}/api/posts/${slug}`, {
+  const res = await fetch(`https://www.builderpaths.com/api/posts/${slug}`, {
     cache: "no-store",
   });
 
