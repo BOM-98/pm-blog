@@ -8,8 +8,8 @@ const BlogPage = ({ searchParams }) => {
   return (
     <div className="container">
       <div className="relative">
-        <div className="py-20 w-[100vw] rounded-[20px] border-4 border-orange-500">
-          <h1 className="title h1 text-left mx-12 my-6 px-10 text-orange-500 capitalize"> {cat} </h1>
+        <div className={`py-20 w-[100vw] rounded-[20px] border-4 border-orange-500`}>
+          <h1 className={`title h1 text-left mx-12 my-6 px-10 text-orange-500 capitalize`}> {cat} </h1>
         </div>
       </div>
       <div className="flex gap-[50px]">

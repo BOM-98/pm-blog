@@ -3,14 +3,12 @@
 import Image from "next/image";
 import { React, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import "react-quill/dist/quill.bubble.css";
 import styles from "./writePage.module.css";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { app } from "../utils/firebase";
 import Button from "@/components/design/Button";
-
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const storage = getStorage(app);
