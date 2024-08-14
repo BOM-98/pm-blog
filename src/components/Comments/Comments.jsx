@@ -6,6 +6,8 @@ import Image from "next/image";
 import useSWR from "swr";
 import { useSession } from "next-auth/react";
 
+const baseUrl = process.env.BASE_URL;
+
 const fetcher = async (url) => {
   const res = await fetch(url);
   const data = await res.json();
@@ -23,7 +25,6 @@ const Comments = ({ postSlug }) => {
   const { data, mutate, isLoading } = useSWR(`${baseUrl}/api/comments?postSlug=${postSlug}`, fetcher);
 
   const [desc, setDesc] = useState("");
-  const baseUrl = process.env.BASE_URL;
 
   const handleSubmit = async () => {
     await fetch(`${baseUrl}/api/comments`, {
