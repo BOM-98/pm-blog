@@ -83,7 +83,7 @@ const WritePage = () => {
       );
     };
 
-    file && upload;
+    file && upload();
   }, [file]);
 
   if (status === "loading") {
@@ -109,7 +109,7 @@ const WritePage = () => {
         desc: value,
         img: media,
         slug: slugify(title),
-        catSlug: catSlug || "style", //If not selected, choose the general category
+        catSlug: catSlug || "identifying-problems", //If not selected, choose the general category
       }),
     });
 
@@ -124,9 +124,10 @@ const WritePage = () => {
       <input
         type="text"
         placeholder="Title"
-        className="w-full h-20 px-4 h1 my-12 focus:outline-none bg-[var(--bg)]"
+        className="w-full h-20 h1 my-12 focus:outline-none bg-[var(--bg)]"
         onChange={(e) => setTitle(e.target.value)}
       />
+      <h2 className="h4 mb-4">Category:</h2>
       {loading ? (
         <p>Loading categories...</p>
       ) : (
@@ -135,8 +136,8 @@ const WritePage = () => {
             <button
               key={cat.slug}
               onClick={() => setCatSlug(cat.slug)}
-              className={`px-4 py-2 rounded-full border border-blue-500 text-blue-500 ${
-                catSlug === cat.slug ? "bg-blue-100" : "hover:bg-blue-50"
+              className={`px-4 py-2 rounded-full border border-${cat.color}-500 text-${cat.color}-500 ${
+                catSlug === cat.slug ? `bg-${cat.color}-100` : `hover:bg-${cat.color}-50`
               }`}
             >
               {cat.title}
@@ -147,7 +148,7 @@ const WritePage = () => {
 
       <div className="flex flex-col gap-[50px]">
         <div className="flex flex-row gap-[50px]">
-          <button className="button hover:text-orange-500 mt-12 pl-4" onClick={() => setOpen(!open)}>
+          <button className="button hover:text-orange-500 mt-12" onClick={() => setOpen(!open)}>
             <svg
               className="w-10 h-10 hover:text-orange-500 hover:scale-105"
               id="Layer_1"

@@ -44,21 +44,7 @@ const SinglePage = async ({ params }) => {
       <div className="content">
         <div className="post mt-12">
           <div className="post-content">
-            <p className="body-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea ducimus deserunt quisquam ipsum doloribus
-              necessitatibus veritatis dolorem et maiores eaque fugit, magnam officiis ipsa exercitationem, alias
-              possimus quos sit?
-            </p>
-            <p className="body-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea ducimus deserunt quisquam ipsum doloribus
-              necessitatibus veritatis dolorem et maiores eaque fugit, magnam officiis ipsa exercitationem, alias
-              possimus quos sit?
-            </p>
-            <p className="body-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea ducimus deserunt quisquam ipsum doloribus
-              necessitatibus veritatis dolorem et maiores eaque fugit, magnam officiis ipsa exercitationem, alias
-              possimus quos sit?
-            </p>
+            <p className="body-1">{data.desc}</p>
             <div className="comments mt-12">
               <Comments postSlug={slug} />
             </div>
