@@ -1,5 +1,5 @@
 import MenuPosts from "../MenuPosts/MenuPosts";
-import MenuCategories from "../CategoryList/MenuCateogires";
+import MenuCategories from "../categoryList/MenuCateogires";
 
 const Menu = () => {
   return (
