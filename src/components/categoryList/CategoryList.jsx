@@ -2,13 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const getBaseUrl = () => {
-  return process.env.BASE_URL || "https://www.builderpaths.com/";
-};
-
 const getData = async () => {
-  const baseUrl = getBaseUrl();
-  const res = await fetch(`${baseUrl}/api/categories`, {
+  const res = await fetch(`https://www.builderpaths.com/api/categories`, {
     cache: "no-store",
   });
 
