@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Button from "../design/Button";
+import Button from "../Design/Button";
 
-const Featured = () => {
+const HeroSection = () => {
   return (
     <div className="mt-[30px] items-center w-full">
       <h1 className="text-[36px] md:text-[72px] sm:text-[64px] font-medium">Product Management Blog.</h1>
@@ -33,4 +33,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default HeroSection;

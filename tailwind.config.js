@@ -128,6 +128,15 @@ export default {
         "benefit-card-5": "url(assets/benefits/card-5.svg)",
         "benefit-card-6": "url(assets/benefits/card-6.svg)",
       },
+      keyframes: {
+        blink: {
+          "0%, 100%": { opacity: 1 },
+          "50%": { opacity: 0 },
+        },
+      },
+      animation: {
+        blink: "blink 1s step-end infinite",
+      },
     },
   },
   plugins: [

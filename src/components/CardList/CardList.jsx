@@ -1,6 +1,6 @@
 import React from "react";
-import Pagination from "../Pagination/Pagination";
-import Card from "../design/Card";
+import Pagination from "../Paginations/Pagination";
+import Card from "../Design/Card";
 
 const baseUrl = process.env.BASE_URL;
 const getData = async (page, cat) => {
