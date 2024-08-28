@@ -8,7 +8,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { app } from "../utils/firebase";
-import Button from "@/components/Design/Button";
+import Button from "@/components/Designs/Button";
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const storage = getStorage(app);

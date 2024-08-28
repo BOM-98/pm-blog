@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import Button from "../Design/Button";
+import Button from "../Designs/Button";
 
 const Pagination = ({ page, hasPrev, hasNext }) => {
   const router = useRouter();

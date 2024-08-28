@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Button from "../Design/Button";
-import Typewriter from "../Design/Typewriter";
+import Button from "../Designs/Button";
+import Typewriter from "../Designs/Typewriter";
 
 const QuoteSection = () => {
   return (

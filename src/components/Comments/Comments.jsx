@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Button from "../Design/Button";
+import Button from "../Designs/Button";
 import Link from "next/link";
 import Image from "next/image";
 import useSWR from "swr";
