@@ -6,8 +6,8 @@ import ThemeToggle from "../themeToggle/ThemeToggle";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center h-[100px]">
-      <Link href="/" className="text-start text-[22px] sm:text-start sm:text-[36px] font-bold inline">
+    <div className="flex justify-between items-center justify-center h-[100px]">
+      <Link href="/" className="text-start text-[22px] sm:text-[28px] font-bold inline">
         <Image src="/builder-paths-logo.svg" className="h-8 me-3 inline" alt="Main Logo" width={32} height={32} />
         Builder Paths
       </Link>

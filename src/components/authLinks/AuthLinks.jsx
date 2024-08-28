@@ -11,15 +11,15 @@ const AuthLinks = () => {
   return (
     <>
       {status === "unauthenticated" ? (
-        <Link href="/login" className="cursor-pointer invisible sm:visible">
+        <Link href="/login" className="cursor-pointer hidden sm:visible">
           Login
         </Link>
       ) : (
         <>
-          <Link href="/write" className="cursor-pointer invisible sm:visible">
+          <Link href="/write" className="cursor-pointer hidden sm:visible">
             Write
           </Link>
-          <span className="cursor-pointer invisible sm:visible">Logout</span>
+          <span className="cursor-pointer hidden sm:visible">Logout</span>
         </>
       )}
       <div className="w-[20px] h-[16px] sm:hidden flex flex-col justify-between" onClick={() => setOpen(!open)}>
