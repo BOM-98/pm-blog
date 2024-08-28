@@ -1,7 +1,7 @@
 import styles from "./homepage.module.css";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import Menu from "../components/Menu/Menu";
-import CategoryList from "../components/CategoryList/CategoryList";
+import CategoryList from "../components/CategoryLists/CategoryList";
 import CardList from "../components/CardList/CardList";
 import QuoteSection from "@/components/QuoteSection/QuoteSection";
 
